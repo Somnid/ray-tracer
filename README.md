@@ -1,3 +1,3 @@
-# wc-app-template
+# ray-tracer
 
-My boilerplate for 0 dependency web apps built on top of Web Components.
+A simple web component for declarative ray tracing.
