@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Raytrace</title>
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="css/system.css">
+		<link rel="icon" href="img/icon32x32.png" type="image/png">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#ff6400">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="A Web app">
+	</head>
+	<body>
+		<ray-tracer width="640" height="480">
+			<ray-tracer-camera location="0, 1.8, 10" direction="0, 3, 0" field-of-view="45"></ray-tracer-camera>
+			<ray-tracer-light location="-20, -10, 0"></ray-tracer-light>
+			<ray-tracer-sphere location="0, 3.5, -3" color="rgb(155, 200, 155)" specular="0.2" lambert="0.7" ambient="0.1" radius="3"></ray-tracer-sphere>
+			<ray-tracer-sphere location="-4, 2, -1" color="rgb(155, 200, 155)" specular="0.1" lambert="0.9" ambient="0.0" radius="0.2"></ray-tracer-sphere>
+			<ray-tracer-sphere location="-4, 3, -1" color="rgb(155, 200, 155)" specular="0.2" lambert="0.7" ambient="0.1" radius="0.1"></ray-tracer-sphere>
+		</ray-tracer>
+		<!--<service-worker url="service-worker.js" scope="./"></service-worker>-->
+		<script src="js/components/service-worker.js" type="module"></script>
+		<script src="js/components/ray-tracer.js" type="module"></script>
+	</body>
+</html>
